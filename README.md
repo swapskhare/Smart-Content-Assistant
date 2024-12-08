@@ -1,1 +1,1 @@
-# Smart-Content-Assistant
+# Smart Content Assistant: AI-Driven Content Creation and Analysis
