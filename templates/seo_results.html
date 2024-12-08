@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEO Analysis Results</title>
+</head>
+<body>
+    <h1>SEO Analysis Results</h1>
+    <p><strong>Word Count:</strong> {{ analysis['word_count'] }}</p>
+    <p><strong>Keyword Count:</strong> {{ analysis['keyword_count'] }}</p>
+    <p><strong>Keyword Density:</strong> {{ analysis['keyword_density']:.2f }}%</p>
+    <p><strong>Readability Score:</strong> {{ analysis['readability_score']:.2f }}</p>
+    
+    <h2>Suggestions</h2>
+    <ul>
+        {% for suggestion in suggestions %}
+        <li>{{ suggestion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
