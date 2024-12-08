@@ -31,30 +31,35 @@ Ensure the following are installed on your system:
    ```bash
    git clone https://github.com/yourusername/SmartContentAssistant.git
    cd SmartContentAssistant
-   ```bash
+   ```
 
 2. Create a virtual environment and activate it
   ```bash
   python3 -m venv env
-  source env/bin/activate 
+  source env/bin/activate
+  ```
   
   # On Windows, use
   ```bash
   env\Scripts\activate
+  ```
 
 3. Install the dependencies
    ```bash
    pip install -r requirements.txt
+   ```
 
 4. setup the database
    
 5. run the application
    ``bash
    python app/main.py
+   ```
    
-6. open your browser and navigate to:
+7. open your browser and navigate to:
    ```bash
    http://127.0.0.1:5000
+   ```
 
 
 ## Usage
