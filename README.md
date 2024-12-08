@@ -52,7 +52,7 @@ Ensure the following are installed on your system:
 4. setup the database
    
 5. run the application
-   ``bash
+   ```bash
    python app/main.py
    ```
    
