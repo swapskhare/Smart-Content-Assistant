@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
+from app.models.seo_optimizer import analyze_seo, suggest_improvements
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
@@ -52,6 +53,18 @@ def profile():
         return redirect(url_for('login'))
     user = User.query.get(session['user_id'])
     return render_template('profile.html', user=user)
+
+@app.route('/seo', methods=['POST'])
+def seo_analysis():
+    content = request.form['content']
+    keyword = request.form['keyword']
+    ideal_count = int(request.form['ideal_count'])
+    
+    analysis = analyze_seo(content, keyword)
+    suggestions = suggest_improvements(content, keyword, ideal_count)
+    
+    return render_template('seo_results.html', analysis=analysis, suggestions=suggestions)
+
 
 if __name__ == '__main__':
     db.create_all()
