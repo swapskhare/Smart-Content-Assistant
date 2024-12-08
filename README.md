@@ -10,3 +10,9 @@ An intelligent platform for generating, analyzing, and optimizing content. Suppo
 
 ## Installation
 1. Clone the repository:
+2. Navigate to the directory:
+3. Install dependencies:
+
+
+## Usage
+Run the application:
