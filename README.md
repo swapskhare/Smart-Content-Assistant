@@ -33,11 +33,13 @@ Ensure the following are installed on your system:
    cd SmartContentAssistant
 
 2. Create a virtual environment and activate it
-   ```bash
+  ```bash
   python3 -m venv env
-  source env/bin/activate  
-  # On Windows, use 
-  `env\Scripts\activate`
+  source env/bin/activate 
+  
+  # On Windows, use
+  ```bash
+  env\Scripts\activate
 
 3. Install the dependencies
    ```bash
