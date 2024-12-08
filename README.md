@@ -31,6 +31,7 @@ Ensure the following are installed on your system:
    ```bash
    git clone https://github.com/yourusername/SmartContentAssistant.git
    cd SmartContentAssistant
+   ```bash
 
 2. Create a virtual environment and activate it
   ```bash
